@@ -30,4 +30,13 @@ This case study reverse-engineers PostHog’s ingestion pipeline — breaking do
 - ClickHouse enables fast analytical queries on large event datasets.  
 - Tradeoffs include fast reads but more complex write paths and infrastructure needs.
 
----
+## 🧠 Key Technical Tradeoffs
+
+| Area         | Decision          | Tradeoff                                                                 |
+|--------------|-------------------|--------------------------------------------------------------------------|
+| Queue System | Kafka             | High throughput and durability vs. operational complexity and maintenance overhead. |
+| Storage      | ClickHouse        | Fast analytical reads vs. more complex write paths and infrastructure costs.      |
+| API Endpoint | REST `/capture`   | Simplicity and broad compatibility vs. less efficient than binary protocols like gRPC. |
+| Processing   | Batch workers     | Easier to implement and maintain vs. potential increased event processing latency. |
+
+
