@@ -1,51 +1,39 @@
 # Technical Product Management Portfolio
 
-This repo showcases my product and systems thinking across infrastructure, developer tools, and analytics platforms.
-
-It’s built to signal readiness for TPM roles — where product strategy meets systems design.
+Welcome to my TPM portfolio — a collection of case studies, technical specs, and systems thinking exercises designed to demonstrate readiness for technical product management roles.
 
 ---
 
-## 📘 Case Studies (01)
+## 🚀 What You’ll Find Here
 
-Reverse-engineering real developer tools to understand architecture, scaling, and product trade-offs.
+- **Case Studies:**  
+  Reverse-engineering real developer tools to understand architecture, scaling, and product trade-offs.  
+  Example: [PostHog Event Ingestion Pipeline](01-case-studies/posthog-ingestion-pipeline.md)
 
-- [PostHog Event Ingestion Pipeline](01-case-studies/posthog-ingestion-pipeline.md) – How PostHog captures, queues, processes, and stores millions of user events per day.
+- **PRDs & Specs:**  
+  Mock product requirement documents and API specifications that blend product vision with technical detail.  
+  *(Coming soon)*
 
----
+- **Systems Thinking:**  
+  Visualizations and deep dives into distributed systems, rate limiting, and streaming architectures.  
+  *(Coming soon)*
 
-## 📄 PRDs + Specs (02)
-
-Specs and product proposals with technical depth.
-
-- *(Coming soon)*: Multi-tenant SSO for Supabase  
-- *(Coming soon)*: Stripe feature-level usage reporting
-
----
-
-## 🧠 Systems Thinking (03)
-
-Visuals and docs summarizing how distributed systems work.
-
-- *(Coming soon)*: Rate limiting design  
-- *(Coming soon)*: Real-time stream processing
+- **Product Metrics:**  
+  Approaches to defining and measuring success for technical products.  
+  *(Coming soon)*
 
 ---
 
-## 📊 Product Metrics (04)
+## 📈 About Me
 
-How I’d measure success and design KPI dashboards for technical products.
-
----
-
-## 🔧 Assets
-
-All visuals, diagrams, and Draw.io/Whimsical exports.
+I’m Philbert Chan, an aspiring Technical Product Manager focused on building the bridge between business, engineering, and product strategy. I’m automating financial workflows today while mastering the technical fluency needed to lead infrastructure and developer tool products tomorrow.
 
 ---
 
-## 🧭 Author
+## 📫 Connect with Me
 
-Philbert Chan  
-- Currently automating FP&A and building toward TPM roles in fintech/devtools  
-- Focused on becoming technically fluent, product rigorous, and system-minded
+Feel free to reach out via LinkedIn or email — always open to feedback, collaboration, and new opportunities.
+
+---
+
+*This portfolio is a living project and will be updated regularly as I add new case studies and deepen my technical expertise.*
