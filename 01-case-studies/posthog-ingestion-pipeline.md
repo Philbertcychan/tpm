@@ -39,4 +39,35 @@ This case study reverse-engineers PostHog’s ingestion pipeline — breaking do
 | API Endpoint | REST `/capture`   | Simplicity and broad compatibility vs. less efficient than binary protocols like gRPC. |
 | Processing   | Batch workers     | Easier to implement and maintain vs. potential increased event processing latency. |
 
+## 🚀 Product Implications
 
+- The ingestion pipeline design enables PostHog to provide near real-time dashboards and user behavior heatmaps, which are critical for product teams to make timely decisions.
+- Batch processing trades off a bit of latency for easier maintenance and reliability, but high-frequency clients might experience slight delays in event availability.
+- Rate limiting at the API gateway protects backend stability but can impact user experience if limits are too aggressive.
+- Scaling Kafka and ClickHouse to handle 10x current traffic requires careful capacity planning, monitoring, and potential partitioning strategies to maintain performance.
+
+## 🔧 Improvement Proposal (Optional)
+
+If I were the TPM owning this ingestion system, I’d consider:
+
+- Introducing schema validation at the API layer to reject malformed events early and reduce processing errors.
+- Implementing adaptive rate limiting that considers client usage patterns to better accommodate burst traffic without sacrificing stability.
+- Exploring streaming processing (e.g., Apache Flink) to reduce latency compared to batch workers.
+- Adding more granular monitoring and alerting on queue lag and processing times to catch issues before they impact users.
+
+---
+
+## 📌 PM Takeaways
+
+- Architectural trade-offs in infra systems directly impact product performance and user experience.
+- TPMs must deeply understand these trade-offs to prioritize roadmap and guide engineering efforts.
+- Building scalable, reliable pipelines requires close coordination across teams and constant iteration.
+- Thinking in terms of throughput, latency, and system resiliency is critical for TPM success.
+
+---
+
+## 📚 Sources
+
+- [PostHog Documentation](https://posthog.com/docs)
+- [PostHog GitHub Repo](https://github.com/posthog/posthog)
+- [PostHog Blog on Event Ingestion](https://posthog.com/blog/event-ingestion-pipeline)
