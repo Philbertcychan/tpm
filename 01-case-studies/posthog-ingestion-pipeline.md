@@ -1,52 +1,9 @@
-# Technical Product Management Portfolio
+# How PostHog Ingests and Processes Events – A TPM Case Study
 
-This repo showcases my product and systems thinking across infrastructure, developer tools, and analytics platforms.
+## 🔍 Overview
 
-It’s built to signal readiness for TPM roles — where product strategy meets systems design.
+PostHog is an open source product analytics platform that helps teams capture, visualize, and act on user behavior data. It competes with tools like Mixpanel, Segment, and Amplitude.
 
----
+A core part of PostHog’s product experience is its ability to ingest and process millions of events from client-side and server-side SDKs with low latency and high reliability.
 
-## 📘 Case Studies (01)
-
-Reverse-engineering real developer tools to understand architecture, scaling, and product trade-offs.
-
-- [PostHog Event Ingestion Pipeline](01-case-studies/posthog-ingestion-pipeline.md) – How PostHog captures, queues, processes, and stores millions of user events per day.
-
----
-
-## 📄 PRDs + Specs (02)
-
-Specs and product proposals with technical depth.
-
-- *(Coming soon)*: Multi-tenant SSO for Supabase  
-- *(Coming soon)*: Stripe feature-level usage reporting
-
----
-
-## 🧠 Systems Thinking (03)
-
-Visuals and docs summarizing how distributed systems work.
-
-- *(Coming soon)*: Rate limiting design  
-- *(Coming soon)*: Real-time stream processing
-
----
-
-## 📊 Product Metrics (04)
-
-How I’d measure success and design KPI dashboards for technical products.
-
----
-
-## 🔧 Assets
-
-All visuals, diagrams, and Draw.io/Whimsical exports.
-
----
-
-## 🧭 Author
-
-Philbert Chan  
-- Currently automating FP&A and building toward TPM roles in fintech/devtools  
-- Focused on becoming technically fluent, product rigorous, and system-minded
-
+This case study reverse-engineers PostHog’s ingestion pipeline — breaking down how it works, the technical tradeoffs involved, and the product implications of system design choices. It is written from the perspective of a Technical Product Manager responsible for scaling and evolving this part of the stack.
